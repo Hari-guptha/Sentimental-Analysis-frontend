@@ -9,6 +9,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 //Style
 import '../assets/css/Navbar.css'
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -27,8 +28,8 @@ function Navbar() {
                 <Box sx={{ display: { xs: "none", sm: "block" } }}>
                     <Box sx={{ display: "flex", justifyContent: "end" }}>
                         <div style={{ display: "flex", marginRight: '5%' }}>
-                            <h1 id='navitems1'>Home</h1>
-                            <h1 id='navitems1'>About us</h1>
+                            <Link id="Link" to='/'><h1 id='navitems1'>Home</h1></Link>
+                            <Link id="Link" to='/about'><h1 id='navitems1'>About us</h1></Link>
                             <div>
                                 <Button
                                     className='drop'
@@ -49,15 +50,15 @@ function Navbar() {
                                         'aria-labelledby': 'basic-button',
                                     }}
                                 >
-                                    <MenuItem onClick={handleClose}>Sentimental Analysis</MenuItem>
-                                    <MenuItem onClick={handleClose}>Churn Prediction</MenuItem>
-                                    <MenuItem onClick={handleClose}>Social Listening</MenuItem>
-                                    <MenuItem onClick={handleClose}>Fake Detection</MenuItem>
-                                    <MenuItem onClick={handleClose}>Meme Analysis</MenuItem>
+                                    <Link id="Link" to='/sentiment'><MenuItem onClick={handleClose}>Sentimental Analysis</MenuItem></Link>
+                                    <Link id="Link" to='/churn'><MenuItem onClick={handleClose}>Churn Prediction</MenuItem></Link>
+                                    <Link id="Link" to='/social'><MenuItem onClick={handleClose}>Social Listening</MenuItem></Link>
+                                    <Link id="Link" to='/fake'><MenuItem onClick={handleClose}>Fake Detection</MenuItem></Link>
+                                    <Link id="Link" to='/meme'><MenuItem onClick={handleClose}>Meme Analysis</MenuItem></Link>
                                 </Menu>
                             </div>
-                            <h1 className="navbtn1" id='navitems1'>Login</h1>
-                            <h1 style={{ background: "#404A86", color: "white" }} className="navbtn1" id='navitems1'>Signup</h1>
+                            <Link id="Link" to="/login"><h1 className="navbtn1" id='navitems1'>Login</h1></Link>
+                            <Link id="Link" to="/signup"><h1 style={{ background: "#404A86", color: "white" }} className="navbtn1" id='navitems1'>Signup</h1></Link>
                         </div>
                     </Box>
                 </Box>
@@ -78,15 +79,15 @@ function Navbar() {
                 <br />
                 <br />
                 <div style={{ width: "300px" }}>
-                    <h1 id='navitems1'>Home</h1>
-                    <h1 id='navitems1'>About us</h1>
-                    <h1 id='navitems1'>Sentimental Analysis</h1>
-                    <h1 id='navitems1'>Churn Prediction</h1>
-                    <h1 id='navitems1'>Social Listening</h1>
-                    <h1 id='navitems1'>Fake Detection</h1>
-                    <h1 id='navitems1'>Meme Analysis</h1>
-                    <h1 style={{ width: "50px", marginTop: "20px" }} className="navbtn1" id='navitems1'>Login</h1>
-                    <h1 style={{ background: "#404A86", color: "white", width: "50px" }} className="navbtn1" id='navitems1'>Signup</h1>
+                    <Link id="Link" to="/"><h1 id='navitems1'>Home</h1></Link>
+                    <Link id="Link" to="/about"><h1 id='navitems1'>About us</h1></Link>
+                    <Link id="Link" to="/sentiment"><h1 id='navitems1'>Sentimental Analysis</h1></Link>
+                    <Link id="Link" to="/churn"><h1 id='navitems1'>Churn Prediction</h1></Link>
+                    <Link id="Link" to="/social"><h1 id='navitems1'>Social Listening</h1></Link>
+                    <Link id="Link" to="/fake"><h1 id='navitems1'>Fake Detection</h1></Link>
+                    <Link id="Link" to="/meme"><h1 id='navitems1'>Meme Analysis</h1></Link>
+                    <Link id="Link" to="/login"><h1 style={{ width: "50px", marginTop: "20px" }} className="navbtn1" id='navitems1'>Login</h1></Link>
+                    <Link id="Link" to="/signup"><h1 style={{ background: "#404A86", color: "white", width: "50px" }} className="navbtn1" id='navitems1'>Signup</h1></Link>
                 </div>
             </Drawer>
         </>

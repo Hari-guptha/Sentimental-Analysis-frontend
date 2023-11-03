@@ -10,7 +10,7 @@ const Features = () => {
         <>
             <h1 style={{ textAlign: "center", padding: "5% 0", color: "#404A86" }}>Make Use Of Our Features For Analysing</h1>
             <Box sx={{ display: { sm: "block", xs: "none" } }}>
-                <Box sx={{ display: "flex", flexWrap: "wrap", margin: "10px 15%", justifyContent: "space-between" }}>
+                <Box sx={{ display: "flex", flexWrap: "wrap", margin: "10px 15%", gap:1 }}>
                     <Box id="card">
                         <h3 style={{ marginRight: "20px" }}>Sentiment Analysis</h3>
                         <InsertEmoticonIcon />
@@ -24,7 +24,7 @@ const Features = () => {
                         <InsertEmoticonIcon />
                     </Box>
                 </Box>
-                <Box sx={{ display: "flex", flexWrap: "wrap", margin: "30px 25%", justifyContent: "space-between" }}>
+                <Box sx={{ display: "flex", flexWrap: "wrap", margin: "30px 25%",gap:1  }}>
                     <Box id="card1">
                         <h3 style={{ marginRight: "20px" }}>Sentiment Analysis</h3>
                         <InsertEmoticonIcon />
@@ -40,7 +40,7 @@ const Features = () => {
                 </div>
             </Box>
             <Box sx={{ display: { sm: "none", xs: "block" } }}>
-                <Box sx={{ display: "flex", margin: "10px 15%", flexDirection: "column" }}>
+                <Box sx={{ display: "flex", margin: "10px 15%",flexDirection:"column" }}>
                     <Box id="card3">
                         <h3 style={{ marginRight: "20px" }}>Sentiment Analysis</h3>
                         <InsertEmoticonIcon />
